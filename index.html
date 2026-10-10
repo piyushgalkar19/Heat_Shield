@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>HeatShield</title></head>
+<body>
+<a class="skip" href="#panel">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="lg" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency=".01 .02" numOctaves="2" seed="4" result="n"/><feGaussianBlur in="n" stdDeviation="3" result="b"/><feDisplacementMap in="SourceGraphic" in2="b" scale="16" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
+<div id="map" role="application" aria-label="Interactive map of Indian cities"></div>
+<header class="glass refract"><a class="brand" href="/" data-link><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5z" fill="#e8743b"/><circle cx="12" cy="11" r="3.4" fill="#fff"/></svg>HeatShield</a><nav aria-label="Main" id="nav"></nav><span class="demo">Modelled data</span></header>
+<main><div id="panel" class="glass"></div></main>
+<aside id="card" class="glass" role="region" aria-label="Selected zone" hidden></aside>
+<div id="dock" class="glass refract" hidden><button id="play" aria-label="Play the day">&#9654;</button><label for="hour">Hour <output id="ho"></output></label><input id="hour" type="range" min="6" max="22" value="15"></div>
+<div id="note" class="glass" role="status" hidden></div>
+<script type="module" src="/src/main.js"></script>
+</body></html>
